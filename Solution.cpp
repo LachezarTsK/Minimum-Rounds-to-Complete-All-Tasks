@@ -9,8 +9,8 @@ class Solution {
     static const int NOT_POSSIBLE_TO_COMPLETE_ALL_TASKS = -1;
     
 public:
-    //C++20: int minimumRounds(span<const int> tasks) ...
-    int minimumRounds(const vector<int>& tasks) {
+    //C++20: int minimumRounds(span<const int> tasks) const ...
+    int minimumRounds(const vector<int>& tasks) const {
         unordered_map<int, int> taskFrequency;
         for (int task : tasks) {
             ++taskFrequency[task];
